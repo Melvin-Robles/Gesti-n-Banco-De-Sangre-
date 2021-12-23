@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +17,9 @@ namespace Gestion_Banco_De_Sangre
             InitializeComponent();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Prueba");
+        }
     }
 }
