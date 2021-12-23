@@ -31,6 +31,11 @@ NombreTS TEXT NOT NULL
 PRIMARY KEY (Id)
 );
 
+INSERT INTO TipoSangre(NombreTS) VALUES ('AB');
+INSERT INTO TipoSangre(NombreTS) VALUES ('A');
+INSERT INTO TipoSangre(NombreTS) VALUES ('B');
+INSERT INTO TipoSangre(NombreTS) VALUES ('O');
+
 --TABLA TIPOS DE RH
 
 DROP TABLE IF EXISTS TipoRH;
@@ -42,23 +47,43 @@ NombreRH TEXT NOT NULL
 PRIMARY KEY (Id)
 );
 
+INSERT INTO TipoRH(NombreRH) VALUES ('Positivo');
+INSERT INTO TipoRH(NombreRH) VALUES ('Negativo');
+
+--TABLA GÉNERO
+
+DROP TABLE IF EXISTS Genero;
+CREATE TABLE Genero
+(
+Id INT IDENTITY NOT NULL,
+NombreGenero TEXT NOT NULL
+
+PRIMARY KEY (Id)
+);
+
+INSERT INTO Genero(NombreGenero) VALUES ('Masculino');
+INSERT INTO Genero(NombreGenero) VALUES ('Femenino');
+INSERT INTO Genero(NombreGenero) VALUES ('Otro');
+INSERT INTO Genero(NombreGenero) VALUES ('Prefiero no responder');
+
 --TABLA PACIENTE
 
 DROP TABLE IF EXISTS Paciente;
 CREATE TABLE Paciente
 (
 Id INT IDENTITY NOT NULL,
-Nombres_Paciente VARCHAR(60) NOT NULL,
-Apellidos_Paciente VARCHAR(60) NOT NULL,
-Genero_Paciente VARCHAR(10) NOt NULL,
-Edad_Paciente INT NOT NULL,
-Tipo_SangrePaciente INT NOT NULL,
-RH_Paciente INT NOT NULL
+Nombres VARCHAR(60) NOT NULL,
+Apellidos VARCHAR(60) NOT NULL,
+Genero INT NOt NULL,
+Edad INT NOT NULL,
+TipoSangre INT NOT NULL,
+TipoRH INT NOT NULL
 
 PRIMARY KEY(Id)
 
-FOREIGN KEY (Tipo_SangrePaciente) REFERENCES TipoSangre(Id),
-FOREIGN KEY (RH_Paciente) REFERENCES TipoRH(Id)
+FOREIGN KEY (Genero) REFERENCES Genero(Id),
+FOREIGN KEY (TipoSangre) REFERENCES TipoSangre(Id),
+FOREIGN KEY (TipoRH) REFERENCES TipoRH(Id)
 );
 
 --DBCC CHECKIDENT ('TipoSangre', RESEED, 0)
