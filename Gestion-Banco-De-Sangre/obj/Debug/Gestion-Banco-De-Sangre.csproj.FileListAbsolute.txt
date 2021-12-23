@@ -1,0 +1,9 @@
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\bin\Debug\Gestion-Banco-De-Sangre.exe.config
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\bin\Debug\Gestion-Banco-De-Sangre.exe
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\bin\Debug\Gestion-Banco-De-Sangre.pdb
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\obj\Debug\Gestion-Banco-De-Sangre.csprojAssemblyReference.cache
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\obj\Debug\Gestion_Banco_De_Sangre.Properties.Resources.resources
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\obj\Debug\Gestion-Banco-De-Sangre.csproj.GenerateResource.cache
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\obj\Debug\Gestion-Banco-De-Sangre.csproj.CoreCompileInputs.cache
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\obj\Debug\Gestion-Banco-De-Sangre.exe
+C:\Users\josae\Documents\GitHub\Gestion-Banco-De-Sangre\Gestion-Banco-De-Sangre\obj\Debug\Gestion-Banco-De-Sangre.pdb
