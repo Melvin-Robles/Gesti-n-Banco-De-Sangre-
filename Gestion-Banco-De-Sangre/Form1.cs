@@ -16,5 +16,7 @@ namespace Gestion_Banco_De_Sangre
         {
             InitializeComponent();
         }
+
+
     }
 }
