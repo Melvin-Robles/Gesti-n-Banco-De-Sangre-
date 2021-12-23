@@ -21,5 +21,8 @@ namespace Gestion_Banco_De_Sangre
         {
             MessageBox.Show("Prueba");
         }
+
+        Paciente Donante = new Paciente();
+        Paciente Receptor = new Paciente();
     }
 }
