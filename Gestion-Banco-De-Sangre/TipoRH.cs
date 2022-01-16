@@ -12,29 +12,18 @@ namespace Gestion_Banco_De_Sangre
     using System;
     using System.Collections.Generic;
     
-    public partial class Paciente
+    public partial class TipoRH
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Paciente()
+        public TipoRH()
         {
-            this.Bolsas = new HashSet<Bolsas>();
-            this.Bolsas1 = new HashSet<Bolsas>();
+            this.Paciente = new HashSet<Paciente>();
         }
     
         public int Id { get; set; }
-        public string Nombres { get; set; }
-        public string Apellidos { get; set; }
-        public int Genero { get; set; }
-        public int Edad { get; set; }
-        public int TipoSangre { get; set; }
-        public int TipoRH { get; set; }
+        public string NombreRH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bolsas> Bolsas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bolsas> Bolsas1 { get; set; }
-        public virtual Genero Genero1 { get; set; }
-        public virtual TipoRH TipoRH1 { get; set; }
-        public virtual TipoSangre TipoSangre1 { get; set; }
+        public virtual ICollection<Paciente> Paciente { get; set; }
     }
 }

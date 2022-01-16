@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Prototipo_CS
+namespace Gestion_Banco_De_Sangre
 {
-    class Validaciones
+    public class Validaciones
     {
         public static void SoloLetras(KeyPressEventArgs v)
         {
@@ -36,10 +36,10 @@ namespace Prototipo_CS
             {
                 v.Handled = false;
             }
-            else if (Char.IsSeparator(v.KeyChar))
+            /*else if (Char.IsSeparator(v.KeyChar))
             {
                 v.Handled = false;
-            }
+            }*/
             else if (Char.IsControl(v.KeyChar))
             {
                 v.Handled = false;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3c75a9df7561497886d8a1a7554456e2" Name="Diagram1">
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.Bolsas" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.Genero" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.Paciente" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.TipoBolsa" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.TipoRH" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloBaseGestionBDS.TipoSangre" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="ModeloBaseGestionBDS.FK__Bolsas__Donante__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="ModeloBaseGestionBDS.FK__Bolsas__FechaApl__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="ModeloBaseGestionBDS.FK__Bolsas__Receptor__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="ModeloBaseGestionBDS.FK__Paciente__TipoRH__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="ModeloBaseGestionBDS.FK__Paciente__TipoRH__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="ModeloBaseGestionBDS.FK__Paciente__TipoSa__2D27B809" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

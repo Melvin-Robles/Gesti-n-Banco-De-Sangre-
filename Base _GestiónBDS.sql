@@ -66,6 +66,21 @@ INSERT INTO Genero(NombreGenero) VALUES ('Femenino');
 INSERT INTO Genero(NombreGenero) VALUES ('Otro');
 INSERT INTO Genero(NombreGenero) VALUES ('Prefiero no responder');
 
+--TABLA TipoBolsa
+
+DROP TABLE IF EXISTS TipoBolsa;
+CREATE TABLE TipoBolsa
+(
+Id INT IDENTITY NOT NULL,
+Tipo TEXT NOT NULL
+
+PRIMARY KEY(Id)
+);
+
+INSERT INTO TipoBolsa(Tipo) VALUES ('Sangre');
+INSERT INTO TipoBolsa(Tipo) VALUES ('Plasma');
+INSERT INTO TipoBolsa(Tipo) VALUES ('Plaquetas');
+
 --TABLA PACIENTE
 
 DROP TABLE IF EXISTS Paciente;
@@ -84,6 +99,26 @@ PRIMARY KEY(Id)
 FOREIGN KEY (Genero) REFERENCES Genero(Id),
 FOREIGN KEY (TipoSangre) REFERENCES TipoSangre(Id),
 FOREIGN KEY (TipoRH) REFERENCES TipoRH(Id)
+);
+
+--TABLA BolsasSangre
+
+DROP TABLE IF EXISTS Bolsas;
+CREATE TABLE Bolsas
+(
+Id INT IDENTITY NOT NULL,
+TipoBolsa INT NOT NULL,
+Cantidadml INT NOT NULL,
+Donante INT NOT NULL,
+Receptor INT NOT NULL,
+FechaDonacion DATE NOT NULL,
+FechaAplicacion DATE
+
+PRIMARY KEY(Id)
+
+FOREIGN KEY (TipoBolsa) REFERENCES TipoBolsa(Id),
+FOREIGN KEY (Donante) REFERENCES Paciente(Id),
+FOREIGN KEY (Receptor) REFERENCES Paciente(Id)
 );
 
 --DBCC CHECKIDENT ('TipoSangre', RESEED, 0)
